@@ -1,6 +1,13 @@
-sudo: false
-language: node_js
-node_js:
-- 8
-notifications:
-    webhooks: https://www.circleci.com/
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Greeting
+          command: echo Hello, world.
+      - run:
+          name: Print the Current Time
+          command: date
