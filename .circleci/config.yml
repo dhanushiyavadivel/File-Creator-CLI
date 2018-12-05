@@ -1,1 +1,6 @@
-for yml file creation
+sudo: false
+language: node_js
+node_js:
+- 8
+notifications:
+    webhooks: https://www.circleci.com/
