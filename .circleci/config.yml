@@ -10,4 +10,4 @@ jobs:
           command: echo Hello, world2.
       - run:
           name: Print the Current Time
-          command: date
+          command: node package.json
